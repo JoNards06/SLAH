@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Event</title>
+<meta name="viewport" content="width=device-widht, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="Event.css">
+
+<body>
+    
+  <section class="header">
+    <nav>
+      <a href="SLAH.jfif"><img src="SLAH.jfif"></a>
+      <div class="nav-links">
+        
+        <ul>
+          <li><a href="Home.html"><b>Home</b></a></li>
+          <li><a href="Photo Gallery.html"><b>Photo Gallery</b></a></li>
+          <li><a href="Philosophy, Vision &Mission.html"><b>Vision & Mission</b></a></li>
+          <li><a href="Event.html"><b>Event</b></a></li>
+          <li><a href="About.html"><b>About us</b></a></li>
+          
+        </ul>
+      </div>
+  
+  
+    </nav>
+    <br>
+    <br>
+    <br>
+    <div class="august">EVENTS</div>
+<br>
+<br>
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="buwan ng wika.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="bnw 1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="bwn2.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides1">
+    <img src="bwn3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="bwn4.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+<br>
+<br>
+<p class="english"></p>
+<br>
+<div class="slideshow-container">
+  <div class="mySlides2">
+    <img src="intrams2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="r2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="mass.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="nm3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="ip4.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+
+
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2","mySlides3","mySlides4"]
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2);
+showSlides(1, 3);
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+<br>
+<br>
+<br>
+<div class="events">Buwan ng Wika<p class="def">eto ang taunang selebrasyon ng buwan ng wika. Dito pinapakita ang kahalagahan ng pagmamahal, paggamit at pagtanggap ng ating sariling wika at kultura.</p> </div>
+
+<br>
+<br>
+<br>
+<div class="events">Holy Rosary Month<p class="def">The month of October is also a good time to commit to praying the Holy Rosary daily. This helps us commemorate on the journey of Jesus and Mary.</p> </div>
+     
+<br>
+<br>
+<br>
+<div class="events">Indigenous People's Month<p class="def">This month is being observed to raise awareness on the importance of the special population or the indigenous people of he community. This promotes respect on their rights and contributions in the community.</p> </div>
+   
+<br>
+<br>
+<br>
+<div class="events">Intramurals<p class="def">In this event there are four units UNIT-1(Red),UNIT-2(BLUE),UNIT-3(GREEN), and lastly UNIT-4(YELLOW). There are competing their colors,intervals,sports,and skills.</p> </div>
+
+<br>
+<br>
+<br>
+<div class="events">Christmas Family Day<p class="def">A celebration of family togertherness in the season of love.</p> </div>
+  
+</body>
+</head>
+</html>
+</link>

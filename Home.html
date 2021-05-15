@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Saint Louis School of Aurora Hill</title>
+<meta name="viewport" content="width=device-widht, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="Home.css">
+
+
+
+<body>
+
+<section class="header">
+  <nav>
+    <a  class="reg" href="SLAH.jfif"><img src="SLAH.jfif"></a>
+    <div class="nav-links">
+      
+      <ul>
+        <li><a href="Home.html"><b>Home</b></a></li>
+        <li><a href="Photo Gallery.html"><b>Photo Gallery</b></a></li>
+        <li><a href="Philosophy, Vision &Mission.html"><b>Vision & Mission</b></a></li>
+        <li><a href="Event.html"><b>Event</b></a></li>
+        <li><a href="About.html"><b>About us</b></a></li>
+        
+      </ul>
+    </div>
+
+
+  </nav>
+  <br>
+  <br>
+  <br>
+  <div class="container">
+    <img class="mySlides w3-animate-bottom" src="50th.jpg" style="width:150%">
+    <img class="mySlides w3-animate-bottom" src="50th2.jpg" style="width:150%">
+    <img class="mySlides w3-animate-bottom" src="recollection.jpg" style="width:150%">
+    <img class="mySlides w3-animate-bottom" src="icp.jpg" style="width:150%">
+    <img class="mySlides w3-animate-bottom" src="IP.jpg" style="width:150%">
+    <img class="mySlides w3-animate-bottom" src="nm.jpg" style="width:150%">
+    <img class="mySlides w3-animate-bottom" src="sn.jpg" style="width:150%">
+    <img class="mySlides w3-animate-bottom" src="ip1.jpg" style="width:150%">
+    <img class="mySlides w3-animate-bottom" src="nm.jpg" style="width:150%">
+    <img class="mySlides w3-animate-bottom" src="recollection1.jpg" style="width:150%">
+  </div>
+  <br>
+  <br>
+  <br>
+  
+  <script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2500);    
+  }
+  </script>
+    
+</section>
+  <br>
+  <br>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="me.jpg" alt="Joemar" style="width:100%">
+      <div class="container">
+        <h2>Joemar</h2>
+        <p class="title">Designer</p>
+        <p>Hello, can i help you?</p>
+      
+       <a href="https://www.facebook.com/SLSAH1968"> <p><button class="button">Contact us</button></p></a>
+      </div>
+    </div>
+  </div>
+<div class="announce">
+  <a class="pic" href="registration.png"><img src="registration.png"></a>
+  <br>
+ANNOUNCEMENT:
+
+Dear Parents/Guardians,
+
+Greetings of peace and love!
+
+This is to inform you that the EARLY REGISTRATION for INCOMING GRADE 7 for School Year 2021 - 2022 will start on March 1, 2021. We are happy to announce that we have 141 ESC slots.
+
+You have two options on how to register:
+A. Online Registration
+1. Access this link <a href="https://forms.gle/mqwyRUnWGWLRS7Xy5">https://forms.gle/mqwyRUnWGWLRS7Xy5</a>
+2. Provide all necessary information asked on the Online Registration Form
+3. Wait for a text message for confirmation.
+
+OR
+
+B. On-site Registration
+1. Proceed to SLSAH's Guidance Office
+2. Fill-up Registration Form
+
+All information gathered through the online and offline forms will be used for admission purposes only. Submission of forms and its content serves as a permission for Saint Louis School of Aurora Hill, Inc. to utilize it for registration purposes. Rest assured that data collected will be treated with utmost confidentiality and professionalism.
+
+For more inquiries, you may send a message or visit the school considering IATF protocols: No Face Mask and Face Shield, No Entry and Practice Social Distancing.
+
+Please be guided accordingly!
+
+Thank you for your unending support and may God bless you and your family a thousand fold!
+</div>
+  <button class="open-button" onclick="openForm()">Open Form</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+  
+
+
+  
+</body>
+</head>
+</html>
